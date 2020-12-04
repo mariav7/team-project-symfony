@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ asset('css/apropos.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<section id="presentation">
+   <div class="container">
+      <div class="row flex-row-reverse justify-content-sm-center">
+         <div class="col-sm-12 col-lg-6 order-1 order-lg-1 pb-4 mt-4 mt-lg-0 text-1">
+            <h2>Notre Mission</h2>
+            <span></span>
+            <p class="lead text-justify">
+               La mission de Zas galerie est de créer le lien entre les artistes et leur futur public.
+               Pour ce faire nous avons à coeur de leur donner une visibilité en faisant entrer leurs
+               oeuvres et leur art dans des endroits où on ne les attends pas forcément.
+            </p>
+            <p class="lead text-justify">
+               Nous sommes convaincue que cette nouvelles approche va contribuer à une effervescence
+               autour des divers sujets qui sont abordés.
+            </p>
+         </div>
+
+         <div class="col-sm-12 col-lg-6 text-center my-auto order-2 order-lg-2">
+            <img class="mx-auto" src="img/exposition.png" alt="photo galerie">
+         </div>       
+      </div>
+   </div>
+</section>
+
+<!-- fin présentation -->
+
+<!-- Section Services-->
+<section id="services">
+   <div class="container service-1">          
+      <div class="row my-lg-5">
+         <div class="col-sm-12 col-lg-6 order-1 order-lg-1 pb-4 mt-4 mt-lg-0">
+            <h2>Nos Services</h2>
+            <span></span>
+         </div>
+      </div>
+
+      <div class="row justify-content-sm-center">
+         <div class="col-sm-12 offset-sm-12 col-lg-6 order-1 order-lg-1 pb-4 mt-4 mt-lg-0">
+           <!-- <h2 class="mb-5">Nos Services</h2>-->
+            <h3><i>Conseil en Art</i></h3>
+            <p class="lead text-left">
+               Nous vous accompagnons dans le développement de vos sensibilités artistiques, 
+               pour la mise en place de votre collection ou d’un projet qui vous ressemble.
+            </p>
+         </div>
+      
+         <div class="col-sm-12 offset-sm-12 col-lg-6 text-center my-auto order-2 order-lg-2">
+            <img class="mx-auto" src="img/conseil-art.png" alt="photo galerie">
+         </div>
+      </div>
+   </div><!-- fin service 1 -->
+
+       <!-- Service 2 -->
+   <div class="container service-2">
+      <div class="row flex-row-reverse justify-content-sm-center">
+         <div class="col-sm-12 offset-sm-12 col-lg-6 order-1 order-lg-1 pb-4 mt-4 mt-lg-0 text-1">
+            <h3 class="mt-5"><i>Conseil Entreprises</i></h3>
+            <p class="lead text-justify">
+                     Notre équipe d'expert et de passionnés vous accompagne pour rythmer vos espaces de travail, égayer les murs, apaiser, stimuler la créativité en créant un écrin à votre image.
+            </p>
+            <p class="lead text-justify">
+                     Nous sommes à même de vous garantir un conseil avisé, pour vous aider à donner réalité à vos projets et acquérir une œuvre qui vous corresponde.
+            </p>
+         </div>
+        
+         <div class="col-sm-12 offset-sm-12 col-lg-6 text-center my-auto order-2 order-lg-2">
+            <img class="mx-auto" src="img/escalier.png" alt="photo escalier">
+         </div>
+          
+      </div>
+   </div><!-- fin service 2 -->
+</section> <!-- fin services-->
+
+{% include 'galerie/carousel_logos.html.twig' %}
+
+{% endblock %}

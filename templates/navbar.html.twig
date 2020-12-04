@@ -1,0 +1,34 @@
+{% block style %}
+   <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+{% endblock %}
+
+<nav>
+   <div class="container">
+      <ul class="menu">
+         <li class="logo">
+         <a href="{{ path('home') }}">ZAS GALERIE</a>
+         </li>
+         <li class="item">
+            <a href="{{ path('galerie') }}">OEUVRES</a>
+         </li>
+         <li class="item">
+            <a href="{{ path('apropos') }}">A PROPOS</a>
+         </li>
+         <li class="item">
+            <a href="#contact">CONTACT</a>
+         </li>
+         <li class="toggle">
+            <a href="#">
+               <i class="fas fa-bars"></i>
+            </a>
+         </li>
+      </ul>
+   </div>
+</nav>
+
+<!-- BOUTTON POUR MONTER EN HAUT DE PAGE -->
+<span id="goUp">
+   <a href="#page-top">
+      Up <i class="fas fa-arrow-up"></i>
+   </a>
+</span>

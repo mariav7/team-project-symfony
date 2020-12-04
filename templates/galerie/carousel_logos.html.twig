@@ -1,0 +1,102 @@
+{% block style %}
+<link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
+{% endblock %}
+
+<section class="container logos">
+    <div class="col-md-10 mx-auto">
+         <h3 class="text-left">Ils nous ont déjà fait confiance!</h3>
+         <span></span>
+    </div>
+            
+        <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item my-5 mx-3 row" data-ride="carousel">
+                  
+        <!--Control prev-->
+            <a class="carousel-control-prev col-1" href="#multi-item-example" role="button" data-slide="prev">
+                <i class="fas fa-caret-left" aria-hidden="true"></i>
+                <span class="sr-only"></span>
+            </a>
+        <!--/.Control prev-->
+
+        <!--Slides-->
+        <div class="carousel-inner col-10" role="listbox">
+
+        <!--First slide-->
+            <div class="carousel-item active">
+
+                <div class="row">
+                    <div class="col-md-3 my-auto">
+                        <img class="card-img" src="img/azzley.png" alt="">
+                    </div>
+
+                    <div class="col-md-3 clearfix d-none d-md-block my-auto">
+                        <img class="card-img" src="img/chutt.png" alt="">
+                    </div>
+
+                    <div class="col-md-3 clearfix d-none d-md-block my-auto">
+                        <img class="card-img" src="img/ktj.png" alt="">
+                    </div>
+                    <div class="col-md-3 clearfix d-none d-md-block my-auto">
+                        <img class="card-img" src="img/mooi.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+            <div class="carousel-item">
+
+                <div class="row flex-row-reverse">
+                    <div class="col-md-3 my-auto">
+                        <img class="card-img" src="img/azzley.png" alt="">
+                    </div>
+
+                    <div class="col-md-3 clearfix d-none d-md-block my-auto">
+                        <img class="card-img" src="img/chutt.png" alt="">
+                    </div>
+
+                    <div class="col-md-3 clearfix d-none d-md-block my-auto">
+                        <img class="card-img" src="img/workout.png" alt="">
+                    </div>
+                    <div class="col-md-3 clearfix d-none d-md-block my-auto">
+                        <img class="card-img" src="img/ktj.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        <!--/.Second slide-->
+
+        {# <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="card-img" src="img/7.png" alt="">
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <img class="card-img" src="img/8.png" alt="">
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <img class="card-img" src="img/10.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        <!--/.Third slide--> #}
+
+        </div>
+    <!--/.Slides-->
+
+    <!-- Control next-->
+        <a class="carousel-control-next col-1" href="#multi-item-example" role="button" data-slide="next">
+            <i class="fas fa-caret-right" aria-hidden="true"></i>
+            <span class="sr-only"></span>
+        </a>
+    <!--/.Control next-->
+                
+    </div>
+            <!--/.Carousel Wrapper-->
+</section>

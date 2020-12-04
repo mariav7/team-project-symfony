@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> {% block title %} ZAS Galerie {% endblock %} </title>
+
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="{{ asset('lib/bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('lib/bootstrap/js/bootstrap.min.js') }}">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        {% block style %} {% endblock %}
+
+        <style type="text/css">
+            @font-face {
+                font-family: 'open-sans'; 
+                src:    url({{asset('font/OpenSans-Regular.ttf')}}) format('truetype'),
+                        url({{asset('font/OpenSans-Light.ttf')}}) format('truetype'),
+                        url({{asset('font/OpenSans-LightItalic.ttf')}}) format('truetype'),
+                        url({{asset('font/OpenSans-Bold.ttf')}}) format('truetype');
+                        
+            }
+        </style>
+        
+    </head>
+    <body id="page-top">
+        <!-- HERO -->
+        {% include 'navbar.html.twig' %}
+        
+        <!-- CONTENU -->
+        {% block content %}      
+        {% endblock %}
+
+        <!-- FOOTER -->
+        {% block footer %}
+            {% include 'footer.html.twig' %}
+        {% endblock %}
+
+        <script src="{{ asset('js/navbar-script.js') }}"></script>
+        <script src="{{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+
+        {% block import_js %} {% endblock %}
+        {% block script_js %} {% endblock %}
+
+    </body>
+</html>

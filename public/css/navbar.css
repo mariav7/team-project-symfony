@@ -1,0 +1,161 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+nav {
+   background: #375e70;
+   display: block;
+}
+
+nav a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.menu {   
+   list-style-type: none;
+}
+
+ul {
+   margin-bottom: 0 !important;
+}
+
+.logo {
+   font-size: 22px;
+   font-weight: bold;
+   padding: 7.5px 10px 7.5px 0;
+   letter-spacing: 5px;
+}
+
+.item {
+   padding: 10px;
+}
+
+/* .item.button {
+   padding: 9px 5px;
+} */
+
+a:hover,
+.item a:hover::after{
+   color: #629460;
+   transition: 0.5s;
+   cursor: pointer;
+   text-decoration: none !important;
+}
+
+/* Mobile menu */
+.menu {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.menu li a {
+   display: block;
+   padding: 15px 5px;
+}
+
+.toggle {
+   order: 1;
+   font-size: 20px;
+}
+.item {
+   order: 2;
+}
+.item {
+   order: 3;
+   width: 100%;
+   text-align: center;
+   display: none;
+}
+.active .item {
+   display: block;
+}
+
+#goUp {
+   display: none;
+}
+
+@media all and (min-width: 768px) {
+   li a:hover {
+      text-decoration: none;
+   }
+
+   .menu {
+      justify-content: center;
+   }
+   
+   .logo {
+      flex: 1;
+   }
+
+   .item {
+      width: auto;
+      order: 1;
+      display: block;
+   }
+   .toggle {
+      display: none;
+   }
+
+   #goUp {
+      display: contents;
+   }
+
+   #goUp a {
+      position: fixed;
+      left: -37px;
+      transition: 0.5s;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 0;
+      z-index: 1;
+      background-color: rgb(56, 95, 113, 0.3) !important;
+      color: #FFFFFF !important;
+   }
+   
+   #goUp a:hover {
+      left: 0;
+      text-decoration: none;
+      background-color: #3e677d !important;
+      color: #629460 !important;
+   }
+
+   .item {
+      width: auto;
+      order: 1;
+      display: block;
+      position: relative;
+      margin: 10px;
+      padding: 0;
+   }
+
+   .item:hover {
+      opacity: 1;
+   }
+      
+   .item::before {
+      transition: 300ms;
+      height: 3px;
+      content: "";
+      position: absolute;
+      background-color: #629460;
+      left: 0;
+   }
+    
+   .item::before {
+      width: 0%;
+      bottom: 7px;
+   }
+    
+   .item:hover::before {
+      width: 100%;
+   }
+
+}

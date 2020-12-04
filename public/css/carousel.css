@@ -1,0 +1,33 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.carousel-control-next,.carousel-control-prev{
+   position:relative !important;
+   padding: 0 !important;
+   margin: 0 !important;
+} 
+.carousel-control-next i,
+.carousel-control-prev i{
+   color: #629460;
+}
+
+.logos h3 {
+   text-transform: none;
+   font-style: italic;
+   color: #629460;
+}
+
+span {
+   content: "";
+   display: block;
+   width: 180px;
+   height: 2px;
+   background: #629460;
+}
+
+.logos {
+   margin: 5em auto;
+}

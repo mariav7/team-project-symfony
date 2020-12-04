@@ -1,0 +1,79 @@
+{% block style %}
+   <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+{% endblock %}
+
+
+<footer id="contact">
+{# <span id="goUp">
+   <a href="#page-top">
+      Up <i class="fas fa-arrow-up"></i>
+   </a>
+</span> #}
+   <div class="contact-container">
+      <div class="col-formulaire">
+         <p>Une question ?</p>
+            <div class="container">
+                  {{ form_start(formContact) }}
+                  {{ form_row(formContact.nom) }}
+                  {{ form_row(formContact.email) }}
+                  {{ form_row(formContact.objet) }}
+                  {{ form_row(formContact.message) }}
+
+                  <input type="submit" value="Envoyer">
+                     {{ form_end(formContact) }}
+                     {% for message in app.flashes('success_mail_sent') %}
+                        <div class="alert alert-success mt-4" role="alert">{{ message}}
+                           <button type="button" class="close" data-dismiss="success" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+
+                     {% endfor %}
+
+                     {% if not formContact.vars.valid %}
+                        <div class="alert alert-danger mt-4" role="alert">Erreur
+                           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+                     {% endif %}
+                     
+
+            </div>
+      </div>
+
+      <div class="col-services">
+         <div class="info">
+            <h3>Services</h3>
+               <ul>
+                  <li><a href="{{ path('apropos') }}">Conseil Art</a></li>
+                  <li><a href="{{ path('apropos') }}">Conseil Entreprise</a></li>
+               </ul>
+            <h3>Contact</h3>
+               <ul>
+                  <li>34 Avenue Opera</li>
+                  <li>75012 Paris</li>
+                  <li>07 09 78 65 43</li>
+               </ul>
+         </div>
+
+         <div class="reseaux-sociaux">
+            <a href="https://twitter.com/?lang=fr" target="_blank">
+               <img class="" src="img/twitter.png">
+            </a>
+            <a href="https://www.instagram.com/?hl=fr" target="_blank">
+               <img class="" src="img/instagram.png">
+            </a>
+            <a href="https://fr.linkedin.com/" target="_blank">
+               <img class="" src="img/linkedin.png">
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <div class="col-copyright">
+      <p>
+         <a href="{{ path('rgpd') }}">Mentiones légales</a> | Copyright 2020 
+      </p>
+   </div>
+</footer>

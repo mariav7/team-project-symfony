@@ -1,0 +1,102 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+span.line {
+   content: "";
+   display: block;
+   width: 120px;
+   height: 2px;
+   background: #629460;
+}
+
+.galerie {
+   text-align: center;
+}
+
+.galerie figure {
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.galerie figure img {
+   position: relative;
+   width: 100%;
+}
+
+.galerie figcaption {
+   color: rgba(56,95,113, 1);
+   font-size: 20px;
+   text-align: center;
+   padding: 5px 0;
+}
+
+.galerie img {
+   margin-bottom: 0;
+}
+
+.galerie img:hover {
+   cursor: pointer;
+}
+
+@media all and (max-width: 767px) {
+   .row span {
+      display: none;
+   }
+   .galerie figure {
+      border: 1px solid rgba(56,95,113, 1);
+   }
+}
+
+/* buttons */
+
+.filter ul{
+   list-style-type: none;
+}
+
+.filter a{
+   display: block;
+   text-decoration: none;
+   white-space: nowrap;
+}
+
+.filter ul ul{
+   display: none;
+}
+ 
+.filter>ul{
+  display: flex;
+}
+
+.filter ul ul li+li{
+   border-top: 1px solid #f4f0e6;
+}
+
+.filter ul li a{
+   padding: 10px 60px;
+   text-align: center;
+}
+
+.filter>ul>li>a{
+   background-color:#f4f0e6;
+   color:#629460;
+} 
+
+.filter ul ul a {
+   background-color: #f4f0e6;
+   color: #629460;
+}
+
+.filter ul ul a:hover {
+   background-color: #629460;
+   color: #f4f0e6;
+}
+
+.deroule {
+   margin-top: 5px;
+}
+
+/* end of buttons */
+

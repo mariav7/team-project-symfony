@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+   margin: 120px 0 200px 0px;
+}
+
+#presentation h2,
+#services h2 {
+   font-size: 40px;
+   color: #629460;
+   font-style: italic;
+}
+
+#presentation h3,
+#services h3 {
+   font-size: 30px;
+   color: #385F71;
+   font-weight: bold;
+}
+
+#presentation p{
+   font-size: 26px;
+   color: #2B4162;
+   margin: 40px 0;  
+}
+span{
+   content: "";
+   display: block;
+   height: 2px;
+   width: 160px;
+   background: #629460;
+}
+
+.text-1{
+   top: 50px;
+}
+
+.service-2{
+   margin-top: 150px;
+}
+
+#presentation img{
+   box-shadow: -25px -25px 0px #416B82; 
+
+}
+
+#services h3 {
+   text-transform: none;
+}
+
+
+
+@media screen and (max-width: 576px){
+   
+  img{
+       width: 90%;
+   }
+   h2{
+       margin-bottom: 20px!important;
+   }
+   .row{
+       margin: 0 15px ;
+   }
+   .mt-5, .my-5 {
+       margin-top: 0px!important;
+   }
+   #presentation img {
+       width: 80%;
+   }
+}
+
+
+@media screen and (max-width: 768px) {
+
+   section{
+       margin: 50px 0px;
+   }
+   div img{
+       margin-bottom: 60px;
+   }
+   div .text-1{
+       top: 0px;
+   }
+   .service-2{
+       margin-top: 0px;
+   }
+   h2{
+       margin-bottom: 50px;
+
+   }
+   .services{
+       margin: 0 auto;
+   }
+   
+}

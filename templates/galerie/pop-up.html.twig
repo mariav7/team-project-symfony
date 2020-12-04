@@ -1,0 +1,302 @@
+{% block style %}
+<link rel="stylesheet" href="{{ asset('css/pop-up.css') }}">
+<link rel="stylesheet" href="{{ asset('css/accordion.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container text center">
+
+		<section class="pop-up" id="myModal1">
+			<div class="pop-up-content text-center">
+				<div class="pop-up-close" onclick="closeModal('myModal1')">
+					<div class="pop-up-line"></div>
+					<div class="pop-up-line"></div>
+				</div>
+	
+				<div class="pop-up-text text-center">
+					<div class="row col-md-10 mx-auto">
+						<span class="col-md-3 my-auto"></span> 
+						<h3 class="col-md-6 oeuvre">Sunlight</h3>
+						<span class="col-md-3 my-auto"></span>
+					</div>
+					<h4 class="artiste">Elisabeth Cibot</h4>
+				</div>
+	
+				<div class="pop-up-image text-center">
+					<img src="{{ asset('img/1.png')}}" alt="Sunlight">
+					<button class="accordeon mb-1 mt-5">Technique</button>
+					<div class="panel">
+						<p>Céramique</p>
+					</div>
+	
+					<button class="accordeon">Artiste</button>
+					<div class="panel">
+						<p>Artiste sculpteur sud africaine</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="pop-up" id="myModal2">
+			<div class="pop-up-content text-center">
+				<div class="pop-up-close" onclick="closeModal('myModal2')">
+					<div class="pop-up-line"></div>
+					<div class="pop-up-line"></div>
+				</div>
+	
+				<div class="pop-up-text text-center">
+					<div class="row col-md-10 mx-auto">
+						<span class="col-md-3 my-auto"></span> 
+						<h3 class="col-md-6 oeuvre">figé</h3>
+						<span class="col-md-3 my-auto"></span>
+					</div>
+					<h4 class="artiste">Jhon Lo</h4>
+				</div>
+	
+				<div class="pop-up-image text-center">
+					<img src="img/2.png" alt="">
+			
+					<button class="accordeon mb-1 mt-5">Technique</button>
+					<div class="panel">
+						<p>Sculpture, Neo-expressionnisme</p>
+					</div>
+	
+					<button class="accordeon">Artiste</button>
+					<div class="panel">
+						<p>Plasticien, peintre sculpteur japonais</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pop-up" id="myModal3">
+			<div class="pop-up-content text-center">
+				<div class="pop-up-close" onclick="closeModal('myModal3')">
+					<div class="pop-up-line"></div>
+					<div class="pop-up-line"></div>
+				</div>
+	
+				<div class="pop-up-text text-center">
+					<div class="row col-md-10 mx-auto">
+						<span class="col-md-3 my-auto"></span> 
+						<h3 class="col-md-6 oeuvre">blinded</h3>
+						<span class="col-md-3 my-auto"></span>
+					</div>
+					<h4 class="artiste">Théo Jansen</h4>
+				</div>
+	
+				<div class="pop-up-image text-center">
+					<img src="img/3.png" alt="">
+			
+					<button class="accordeon mb-1 mt-5">Technique</button>
+					<div class="panel">
+						<p>Plasticien sclupteur</p>
+					</div>
+	
+					<button class="accordeon">Artiste</button>
+					<div class="panel">
+						<p>Sculpteur néerlandais</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="pop-up" id="myModal4">
+			<div class="pop-up-content text-center">
+				<div class="pop-up-close" onclick="closeModal('myModal4')">
+					<div class="pop-up-line"></div>
+					<div class="pop-up-line"></div>
+				</div>
+	
+				<div class="pop-up-text text-center">
+					<div class="row col-md-10 mx-auto">
+						<span class="col-md-3 my-auto"></span> 
+						<h3 class="col-md-6 oeuvre">blinded</h3>
+						<span class="col-md-3 my-auto"></span>
+					</div>
+					<h4 class="artiste">Theo Jansen</h4>
+				</div>
+	
+				<div class="pop-up-image text-center">
+					<img src="img/4.png" alt="Black White">
+			
+					<button class="accordeon mb-1 mt-5">Technique</button>
+					<div class="panel">
+						<p>Plasticien sculpteur</p>
+					</div>
+	
+					<button class="accordeon">Artiste</button>
+					<div class="panel">
+						<p>Sculpteur néerlandais</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="pop-up" id="myModal5">
+			<div class="pop-up-content text-center">
+				<div class="pop-up-close" onclick="closeModal('myModal5')">
+					<div class="pop-up-line"></div>
+					<div class="pop-up-line"></div>
+				</div>
+	
+				<div class="pop-up-text text-center">
+					<div class="row col-md-10 mx-auto">
+						<span class="col-md-3 my-auto"></span> 
+						<h3 class="col-md-6 oeuvre">smile</h3>
+						<span class="col-md-3 my-auto"></span>
+					</div>
+					<h4 class="artiste">Sixto Rodriguez</h4>
+				</div>
+	
+				<div class="pop-up-image text-center">
+					<img src="img/5.png" alt="Black White">
+			
+					<button class="accordeon mb-1 mt-5">Technique</button>
+					<div class="panel">
+						<p>Peinture air spray</p>
+					</div>
+	
+					<button class="accordeon">Artiste</button>
+					<div class="panel">
+						<p>Street artiste colombien</p>
+					</div>
+				</div>
+			</div>
+		</section>
+			
+		<section class="pop-up" id="myModal6">
+			<div class="pop-up-content text-center">
+				<div class="pop-up-close" onclick="closeModal('myModal6')">
+					<div class="pop-up-line"></div>
+					<div class="pop-up-line"></div>
+				</div>
+	
+				<div class="pop-up-text text-center">
+					<div class="row col-md-10 mx-auto">
+						<span class="col-md-3 my-auto"></span> 
+						<h3 class="col-md-6 oeuvre">Lonely</h3>
+						<span class="col-md-3 my-auto"></span>
+					</div>
+					<h4 class="artiste">Killian</h4>
+				</div>
+	
+				<div class="pop-up-image text-center">
+					<img src="img/6.png" alt="Black White">
+			
+					<button class="accordeon mb-1 mt-5">Technique</button>
+					<div class="panel">
+						<p>Acrilique au couteau</p>
+					</div>
+	
+					<button class="accordeon">Artiste</button>
+					<div class="panel">
+						<p>Peintre irlandais</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="pop-up" id="myModal7">
+			<div class="pop-up-content text-center">
+				<div class="pop-up-close" onclick="closeModal('myModal7')">
+					<div class="pop-up-line"></div>
+					<div class="pop-up-line"></div>
+				</div>
+	
+				<div class="pop-up-text text-center">
+					<div class="row col-md-10 mx-auto">
+						<span class="col-md-3 my-auto"></span> 
+						<h3 class="col-md-6 oeuvre">city lights</h3>
+						<span class="col-md-3 my-auto"></span>
+					</div>
+					<h4 class="artiste">Victoria Kappor</h4>
+				</div>
+	
+				<div class="pop-up-image text-center">
+					<img src="img/7.png" alt="Black White">
+			
+					<button class="accordeon mb-1 mt-5">Technique</button>
+					<div class="panel">
+						<p>Photographie argentique</p>
+					</div>
+	
+					<button class="accordeon">Artiste</button>
+					<div class="panel">
+						<p>Photo-reporter indienne</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="pop-up" id="myModal8">
+			<div class="pop-up-content text-center">
+				<div class="pop-up-close" onclick="closeModal('myModal8')">
+					<div class="pop-up-line"></div>
+					<div class="pop-up-line"></div>
+				</div>
+	
+				<div class="pop-up-text text-center">
+					<div class="row col-md-10 mx-auto">
+						<span class="col-md-3 my-auto"></span> 
+						<h3 class="col-md-6 oeuvre">Uniformité</h3>
+						<span class="col-md-3 my-auto"></span>
+					</div>
+					<h4 class="artiste">Graham Wardle</h4>
+				</div>
+	
+				<div class="pop-up-image text-center">
+					<img src="img/8.png" alt="Black White">
+			
+					<button class="accordeon mb-1 mt-5">Technique</button>
+					<div class="panel">
+						<p>Photographie Noir et Blanc</p>
+					</div>
+	
+					<button class="accordeon">Artiste</button>
+					<div class="panel">
+						<p>Photographe animalier canadien</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pop-up" id="myModal9">
+			<div class="pop-up-content text-center">
+				<div class="pop-up-close" onclick="closeModal('myModal9')">
+					<div class="pop-up-line"></div>
+					<div class="pop-up-line"></div>
+				</div>
+	
+				<div class="pop-up-text text-center">
+					<div class="row col-md-10 mx-auto">
+						<span class="col-md-3 my-auto"></span> 
+						<h3 class="col-md-6 oeuvre">Lady</h3>
+						<span class="col-md-3 my-auto"></span>
+					</div>
+					<h4 class="artiste">Mr. Oreke</h4>
+				</div>
+	
+				<div class="pop-up-image text-center">
+					<img src="img/9.png" alt="Black White">
+			
+					<button class="accordeon mb-1 mt-5">Technique</button>
+					<div class="panel">
+						<p>Peinture air spray</p>
+					</div>
+	
+					<button class="accordeon">Artiste</button>
+					<div class="panel">
+						<p>Street artist issu du  mouvement pop art et de l’esthétisme des comics américains</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+
+
+{% endblock %}

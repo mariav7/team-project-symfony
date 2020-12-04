@@ -1,0 +1,38 @@
+{% block style %}
+<link rel="stylesheet" href="{{ asset('css/selections.css') }}">
+{% endblock %}
+
+   <div class="container text-center selections">
+      <div class="row col-md-10 col-lg-8 mx-auto text-center">
+         <span class="col-md-3 my-auto"></span>
+         <h3 class="col-md-6">nos selections</h3>
+         <span class="col-md-3 my-auto"></span>
+      </div>
+
+      <div class="row mt-4 selections--item">
+         <div class="col-sm-12 col-md-4 mb-sm-2">
+            <figure>
+               <a href="{{ path('galerie') }}"> <img src="{{ asset('img/4.png')}}" alt="Sculpture"> </a>
+               <figcaption>
+                  sculpture
+               </figcaption>
+            </figure>
+         </div>
+         <div class="col-sm-12 col-md-4 mb-sm-2">
+            <figure>
+               <img src="{{ asset('img/10.png')}}" alt="Photographie">
+               <figcaption>
+                  photographie
+               </figcaption>
+            </figure>
+         </div>
+         <div class="col-sm-12 col-md-4 mb-sm-2">
+            <figure>
+               <img src="{{ asset('img/6.png')}}" alt="Peinture">
+               <figcaption>
+                  peinture
+               </figcaption>
+            </figure>
+         </div>
+      </div>
+   </div>

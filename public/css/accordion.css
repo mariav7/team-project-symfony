@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* accordeon */
+.accordeon {
+   background-color: #FFFFFF;
+   color:  #2B4162;
+   cursor: pointer;
+   padding: 1em;
+   width: 100%;
+   border: 1px solid #2B4162;
+   text-align: left;
+   font-size: 1rem;
+   transition: 0.5s;
+ }
+ 
+.accordeon:after {
+ content: '\002B'; /*HMTL + sign*/
+ color: #2B4162;
+ font-size: 18px;
+ font-weight: bold;
+ float: right;
+ margin-left: 5px;
+ }
+ 
+.active:after {
+   content: "\2212"; /*HTML - sign*/
+ }
+ 
+.panel {
+  width: 100%;
+  padding: 0 5px;
+  color: #385F71;
+  text-align: justify;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+/* end of accordeon */
